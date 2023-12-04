@@ -8,6 +8,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "react-scripts build"
   }
 }
