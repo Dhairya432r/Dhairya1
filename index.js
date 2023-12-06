@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://Dhairya:Dhairya432r@cluster0.kad7z2w.mongodb.net
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://dhairya432r.github.io/Dhairya432rp/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
