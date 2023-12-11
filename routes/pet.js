@@ -5,7 +5,7 @@ const Pet = require('../models/User');
 const cors = require('cors')
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://dhairya432r.github.io/Dhairya432rp/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
