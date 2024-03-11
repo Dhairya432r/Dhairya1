@@ -5,7 +5,7 @@ const cors = require('cors');
 
 //hello
 const corsOptions = {
-  origin: 'https://dhairya432r.github.io/Dhairya432rp/',
+  origin: 'https://dhairya432r.github.io',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
