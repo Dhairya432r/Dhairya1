@@ -5,8 +5,7 @@ const multer = require('multer');
 const cors = require("cors")
 const path = require('path');
 const petRouter = require('./routes/pet'); // Define your routes in a separate file
-const gromming = require('./routes/gromming')
-const consult = require('./routes/Consult')
+
 mongoose.connect('mongodb+srv://Dhairya:Dhairya432r@cluster0.kad7z2w.mongodb.net/mongo2?retryWrites=true&w=majority');
 
 const app = express();
