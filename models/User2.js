@@ -37,10 +37,10 @@ const grommingSchema = new mongoose.Schema({
         type: String,
         default: true
       },
-    mobileNumber: {
+      mobileNumber: {
         type: Number,
-        default: true
-      }
+        default:true
+      },
 
 });
 const Gromming = mongoose.model("Gromming",grommingSchema)

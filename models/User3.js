@@ -52,7 +52,7 @@ const ConsultSchema = new mongoose.Schema({
   },
   mobileNumber: {
     type: Number,
-    default: true
+    default:true
   },
   type: {
     type: String,
