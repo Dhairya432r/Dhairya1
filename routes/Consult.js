@@ -5,7 +5,7 @@ const cors = require('cors');
 
 //hello
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://dhairya432r.github.io',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
@@ -25,8 +25,8 @@ router3.get('/', async (req, res) => {
 
   router3.post('/',async(req,res)=> {
     try{
-      const {service,Disease,Society,Flat,Street,Pin,selectedState,selectedCity,type,name,age,weight,breed,gender,aggressive,vaccinated,date,time,Price } = req.body;
-      const consult = new Consult({service,Disease,Society,Flat,Street,Pin,selectedState,selectedCity,type,name,age,weight,breed,gender,aggressive,vaccinated,date,time,Price});
+      const {service,Disease,Society,Flat,Street,Pin,selectedState,selectedCity,username,mobileNumber,type,name,age,weight,breed,gender,aggressive,vaccinated,date,time,Price } = req.body;
+      const consult = new Consult({service,Disease,Society,Flat,Street,Pin,selectedState,selectedCity,username,mobileNumber,type,name,age,weight,breed,gender,aggressive,vaccinated,date,time,Price});
       await consult.save();
       res.status(201).json({message:"successfully"});
 

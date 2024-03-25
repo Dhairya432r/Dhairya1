@@ -32,7 +32,15 @@ const grommingSchema = new mongoose.Schema({
     time:{
         type:String,
         requiredd: true
-    }
+    },
+    username: {
+        type: String,
+        default: true
+      },
+    mobileNumber: {
+        type: Number,
+        default: true
+      }
 
 });
 const Gromming = mongoose.model("Gromming",grommingSchema)

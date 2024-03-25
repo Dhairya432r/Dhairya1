@@ -46,6 +46,14 @@ const ConsultSchema = new mongoose.Schema({
     type: String,
     default: true
   },
+  username: {
+    type: String,
+    default: true
+  },
+  mobileNumber: {
+    type: Number,
+    default: true
+  },
   type: {
     type: String,
     default: true

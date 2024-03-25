@@ -5,7 +5,7 @@ const cors = require('cors');
 
 //hello
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://dhairya432r.github.io',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
@@ -25,8 +25,8 @@ router2.get('/', async (req, res) => {
 
 router2.post('/',async(req,res)=> {
     try{
-      const { type,name,gender,size,old,aggressive,date,time } = req.body;
-      const gromming = new Gromming({ type,name,gender,size,old,aggressive,date,time});
+      const { type,name,gender,size,old,aggressive,date,time,username,mobileNumber } = req.body;
+      const gromming = new Gromming({ type,name,gender,size,old,aggressive,date,time,username,mobileNumber});
       await gromming.save();
       console.log(gromming)
       if(!gromming){
