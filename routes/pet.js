@@ -124,7 +124,7 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-router.get('/', async (req, res) => {
+router.get('/pets', async (req, res) => {
   try {
     const { mobileNumber } = req.headers;
     
