@@ -124,9 +124,9 @@ router.delete('/:id', async (req, res) => {
   }
 });
 
-router.get('/pets', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const { mobileNumber } = req.headers;
+    const {mobileNumber} = req.headers;
     
     if (!mobileNumber) {
       return res.status(400).json({ error: 'Mobile number is required' });
